@@ -1,3 +1,4 @@
+
 body, html {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@ body, html {
     background-color: #f5faea;
 }
 header {
-    background-color: #8ca659;  /* Keeping the earthy green */
+    background-color: #8ca659;
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -21,11 +22,10 @@ header {
 }
 .logo a {
     font-size: 24px;
-    color: #ffffff;  /* Griselle brand color */
+    color: white;
     text-decoration: none;
     font-weight: bold;
     text-align: left;
-    letter-spacing: 1px;  /* Added a little elegance */
 }
 .right-controls {
     display: flex;
@@ -46,14 +46,13 @@ header {
     background-color: #3b4e13;
     transform: scale(1.05);
 }
-
-/* Adjust navigation menu styling */
+/* Nasconde il menu di default su schermi piccoli */
 .nav-menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction:row;
+    justify-content: flex-start; 
 }
 nav ul {
     list-style: none;
@@ -73,7 +72,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #d2b48c;
 }
-
 .search-bar {
     display: flex;
     align-items: center;
@@ -95,8 +93,6 @@ nav ul li a:hover {
 .search-bar button:hover {
     background-color: #333333;
 }
-
-/* Image and About Us */
 .header-image-container {
     width: 100%;
     overflow: hidden;
@@ -117,7 +113,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 .about-us h2 {
-    color: #4d6719;  /* Griselle brand color */
+    color: #4d6719;
     font-size: 1.9em;
     margin-bottom: 10px;
     text-align: center;
@@ -130,15 +126,13 @@ nav ul li a:hover {
     margin-bottom: 20px;
     text-align: justified;
 }
-
-/* Products Section */
 .products {
     padding: 50px 60px;
     text-align: center;
     background-color: #f5faea;
 }
 .products h2 {
-    color: #4d6719;  /* Griselle brand color */
+    color: #4d6719;
     font-size: 1.9em;
 }
 .product-grid {
@@ -154,8 +148,8 @@ nav ul li a:hover {
     transition: transform 0.3s, box-shadow 0.3s, border 0.3s ease;
     border: 2px solid transparent;
     padding: 10px;
-    background-color: #ebf5d6;
-    border-radius: 8px;
+    background-color:#ebf5d6;
+    border-radius:8px;
 }
 .product img {
     width: 100%;
@@ -169,9 +163,9 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 .product.hover-effect {
-    transform: scale(1.05);
+    transform: scale (1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border: 2px solid #4d6719;
+    border: 2px solid #4d6719
 }
 .product h3 {
     margin-top: 20px;
@@ -179,7 +173,7 @@ nav ul li a:hover {
     font-size: 1.6em;
 }
 .product p {
-    margin: 20px;
+    margin:20px;
     font-size: 1.2em;
 }
 .price {
@@ -187,15 +181,13 @@ nav ul li a:hover {
     color: #4d6719;
     font-size: 1.1em;
 }
-
-/* Newsletter Section */
 .newsletter {
     text-align: center;
     padding: 50px 20px;
     background-color: #ebf5d6;
 }
 .newsletter h2 {
-    color: #4d6719;
+    color: #4d6719; 
     font-size: 1.7em;
 }
 .newsletter form {
@@ -221,15 +213,13 @@ nav ul li a:hover {
 .newsletter button:hover {
     background-color: #555555;
 }
-
-/* Location Section */
 .location h2 {
-    color: #4d6719;  /* Griselle brand color */
+    color: #4d6719;
     font-size: 1.4em;
 }
 .location p {
-    font-size: 1em;
-}
+     font-size:1em;
+} 
 .location {
     text-align: center;
     margin: 30px 0;
@@ -239,8 +229,6 @@ nav ul li a:hover {
     height: 300px;
     border: none;
 }
-
-/* Footer */
 footer {
     background-color: #8ca659;
     color: #fff;
@@ -269,10 +257,9 @@ footer {
 .footer-column a:hover {
     color: #d2b48c;
 }
-
-/* Mobile Menu Toggle */
+/* Stile di base per il menu toggle */
 .menu-toggle {
-    display: none;
+    display: none; 
     font-size: 23px;
     background: none;
     color: white;
@@ -289,7 +276,7 @@ footer {
 .menu-toggle.active {
     color: #4d6719;
 }
-
+/* Nasconde il menu di default su schermi piccoli */
 .nav-menu {
     display: flex;
     flex-direction: column;
@@ -298,21 +285,20 @@ footer {
     border-radius: 8px;
 }
 .nav-menu a:hover {
-    background-color: none;
+    background-color:none;
 }
 
-/* Mobile View Styles */
 @media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
     }
-    .search-bar {
+  .search-bar {
         margin-top: 10px;
     }
     .nav-menu {
         width: 200px;
-    }
-    .logo {
+      } 
+    .logo  {
         font-size: 10px;
     }
 
@@ -324,7 +310,6 @@ footer {
     nav ul li {
         margin: 10px 0;
     }
-
     .nav-menu.open {
         display: flex;
         position: absolute;
@@ -350,24 +335,23 @@ footer {
     .nav-menu li:last-child {
         border-bottom: none;
     }
-
-    .nav-menu a {
-        display: block;
-        padding: 15px 20px;
-        text-decoration: none;
-        color: #333;
-        transition: background 0.3s;
-    }
-
-    .nav-menu a:hover {
-        background-color: #f0f0f0;
-    }
+  .nav-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+  .nav-menu a:hover {
+    background-color: #f0f0f0;
+}
 
     /* Posizionamento del burger menu */
     .menu-toggle {
         display: block;
     }
-
+  
+  
     .product-grid {
         flex-direction: column;
         align-items: center;
@@ -377,8 +361,7 @@ footer {
         width: 100%;
         max-width: 400px;
         margin: 10px 0;
-    }
-
+}
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -395,14 +378,14 @@ footer {
     }
 
     .nav-menu {
-        display: none;
+        display: none; 
         flex-direction: column;
         background-color: #fff;
         position: absolute;
-        top: 60px;
+        top: 60px; 
         right: 0;
         width: 200px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
     .nav-menu.open {
@@ -424,3 +407,4 @@ footer {
         border-bottom: none;
     }
 }
+
