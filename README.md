@@ -1,2 +1,0 @@
-# griselda
-esercizio web design
