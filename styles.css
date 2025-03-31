@@ -2,23 +2,26 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5faea;
+    background-color: #f7f7f7; /* Bianco per uno sfondo pulito e luminoso */
 }
+
 header {
-    background-color: #8ca659;
+    background-color: #e0a1d9; /* Rosa tenue per il brand Griselle */
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8ca659;
+    background-color: #e0a1d9;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1000;
 }
+
 .logo a {
     font-size: 24px;
     color: white;
@@ -26,14 +29,16 @@ header {
     font-weight: bold;
     text-align: left;
 }
+
 .right-controls {
     display: flex;
     align-items: center;
 }
+
 .menu-toggle {
     display: none;
     font-size: 24px;
-    background: #4d6719;
+    background: #d080a1; /* Rosa più scuro per il menu */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -41,46 +46,53 @@ header {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .menu-toggle:hover {
-    background-color: #3b4e13;
+    background-color: #c16e8a; /* Rosa più scuro per hover */
     transform: scale(1.05);
 }
-/* Nasconde il menu di default su schermi piccoli */
+
 .nav-menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction:row;
-    justify-content: flex-start; 
+    flex-direction: row;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     margin-left: 20px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: color 0.3s;
 }
+
 nav ul li a:hover {
-    color: #d2b48c;
+    color: #f9c6e8; /* Colore rosa chiaro per hover */
 }
+
 .search-bar {
     display: flex;
     align-items: center;
 }
+
 .search-bar input[type="text"] {
     padding: 5px;
     border: none;
     border-radius: 3px;
     margin-right: 10px;
 }
+
 .search-bar button {
     background-color: white;
     border: none;
@@ -89,34 +101,40 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .search-bar button:hover {
-    background-color: #333333;
+    background-color: #f0c9df; /* Rosa pallido per il bottone della ricerca */
 }
+
 .header-image-container {
     width: 100%;
     overflow: hidden;
 }
+
 .header-image {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
 .about-us {
     padding: 50px 20px;
-    background-color: #ebf5d6;
+    background-color: #f9e5f1; /* Rosa molto chiaro per la sezione "Chi siamo" */
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
 .about-us h2 {
-    color: #4d6719;
+    color: #e0a1d9; /* Rosa per il titolo */
     font-size: 1.9em;
     margin-bottom: 10px;
     text-align: center;
 }
+
 .about-us p {
     color: #333;
     font-size: 1.2em;
@@ -125,20 +143,24 @@ nav ul li a:hover {
     margin-bottom: 20px;
     text-align: justified;
 }
+
 .products {
     padding: 50px 60px;
     text-align: center;
-    background-color: #f5faea;
+    background-color: #f7f7f7;
 }
+
 .products h2 {
-    color: #4d6719;
+    color: #e0a1d9; /* Rosa per il titolo della sezione */
     font-size: 1.9em;
 }
+
 .product-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .product {
     flex: 1 1 30%;
     box-sizing: border-box;
@@ -147,9 +169,10 @@ nav ul li a:hover {
     transition: transform 0.3s, box-shadow 0.3s, border 0.3s ease;
     border: 2px solid transparent;
     padding: 10px;
-    background-color:#ebf5d6;
-    border-radius:8px;
+    background-color: #f9e5f1; /* Rosa chiaro per il prodotto */
+    border-radius: 8px;
 }
+
 .product img {
     width: 100%;
     max-width: 300px;
@@ -158,41 +181,50 @@ nav ul li a:hover {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
+
 .product img:hover {
     transform: scale(1.1);
 }
+
 .product.hover-effect {
-    transform: scale (1.05);
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border: 2px solid #4d6719
+    border: 2px solid #e0a1d9; /* Rosa per il bordo hover */
 }
+
 .product h3 {
     margin-top: 20px;
     color: #2e3e0f;
     font-size: 1.6em;
 }
+
 .product p {
-    margin:20px;
+    margin: 20px;
     font-size: 1.2em;
 }
+
 .price {
     font-weight: bold;
-    color: #4d6719;
+    color: #e0a1d9; /* Rosa per il prezzo */
     font-size: 1.1em;
 }
+
 .newsletter {
     text-align: center;
     padding: 50px 20px;
-    background-color: #ebf5d6;
+    background-color: #f9e5f1;
 }
+
 .newsletter h2 {
-    color: #4d6719; 
+    color: #e0a1d9;
     font-size: 1.7em;
 }
+
 .newsletter form {
     max-width: 600px;
     margin: 0 auto;
 }
+
 .newsletter input[type="email"] {
     padding: 10px;
     width: calc(100% - 120px);
@@ -200,65 +232,79 @@ nav ul li a:hover {
     border-radius: 3px;
     margin-right: 10px;
 }
+
 .newsletter button {
     padding: 10px 20px;
-    background-color: #3d5214;
+    background-color: #d080a1;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .newsletter button:hover {
-    background-color: #555555;
+    background-color: #c16e8a;
 }
+
 .location h2 {
-    color: #4d6719;
+    color: #e0a1d9;
     font-size: 1.4em;
 }
+
 .location p {
-     font-size:1em;
-} 
+    font-size: 1em;
+}
+
 .location {
     text-align: center;
     margin: 30px 0;
 }
+
 .location iframe {
     width: 100%;
     height: 300px;
     border: none;
 }
+
 footer {
-    background-color: #8ca659;
+    background-color: #e0a1d9;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
+
 .footer-content {
     display: flex;
     justify-content: space-around;
     padding: 20px;
 }
+
 .footer-column {
     width: 45%;
 }
+
 .footer-column h3 {
     margin-bottom: 10px;
 }
+
 .footer-column p {
     margin: 5px 0;
 }
+
 .footer-column a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .footer-column a:hover {
-    color: #d2b48c;
+    color: #f9c6e8; /* Colore hover per i link */
 }
-/* Stile di base per il menu toggle */
+
+/* Menu toggle per schermi piccoli */
 .menu-toggle {
-    display: none; 
+    display: none;
     font-size: 23px;
     background: none;
     color: white;
@@ -268,14 +314,16 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .menu-toggle:hover {
-    background-color: #3b4e13;
+    background-color: #c16e8a;
     transform: scale(1.05);
 }
+
 .menu-toggle.active {
-    color: #4d6719;
+    color: #e0a1d9; /* Rosa per l'icona attiva */
 }
-/* Nasconde il menu di default su schermi piccoli */
+
 .nav-menu {
     display: flex;
     flex-direction: column;
@@ -283,21 +331,26 @@ footer {
     position: center;
     border-radius: 8px;
 }
+
 .nav-menu a:hover {
-    background-color:none;
+    background-color: none;
 }
 
+/* Media queries per schermi più piccoli */
 @media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
     }
-  .search-bar {
+
+    .search-bar {
         margin-top: 10px;
     }
+
     .nav-menu {
         width: 200px;
-      } 
-    .logo  {
+    }
+
+    .logo {
         font-size: 10px;
     }
 
@@ -309,6 +362,7 @@ footer {
     nav ul li {
         margin: 10px 0;
     }
+
     .nav-menu.open {
         display: flex;
         position: absolute;
@@ -334,23 +388,23 @@ footer {
     .nav-menu li:last-child {
         border-bottom: none;
     }
-  .nav-menu a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #333;
-    transition: background 0.3s;
-}
-  .nav-menu a:hover {
-    background-color: #f0f0f0;
-}
 
-    /* Posizionamento del burger menu */
+    .nav-menu a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: #333;
+        transition: background 0.3s;
+    }
+
+    .nav-menu a:hover {
+        background-color: #f0f0f0;
+    }
+
     .menu-toggle {
         display: block;
     }
-  
-  
+
     .product-grid {
         flex-direction: column;
         align-items: center;
@@ -360,7 +414,8 @@ footer {
         width: 100%;
         max-width: 400px;
         margin: 10px 0;
-}
+    }
+
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -377,14 +432,14 @@ footer {
     }
 
     .nav-menu {
-        display: none; 
+        display: none;
         flex-direction: column;
         background-color: #fff;
         position: absolute;
-        top: 60px; 
+        top: 60px;
         right: 0;
         width: 200px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .nav-menu.open {
@@ -406,4 +461,3 @@ footer {
         border-bottom: none;
     }
 }
-
