@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Griselle - Eleganza senza tempo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,16 +17,16 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#collezioni">Collezioni</a></li>
                 <li><a href="#about">Chi Siamo</a></li>
+                <li><a href="#collezioni">Collezioni</a></li>
+                <li><a href="#testimonials">Testimonianze</a></li>
                 <li><a href="#contact">Contatti</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <img src="https://i.pinimg.com/736x/6f/c3/39/6fc33958311ac579dd74ff84b7664a51.jpg" alt="Immagine di Benvenuto" />
+    <section id="home" class="hero">
         <div class="hero-content">
             <h2>Eleganza senza tempo, funzionalità moderna</h2>
             <p>Scopri la nostra collezione di borse, gioielli e tacchi, pensati per la donna che non rinuncia al lusso e alla praticità.</p>
@@ -33,55 +34,88 @@
         </div>
     </section>
 
-    <!-- Collezioni Section -->
-    <section class="collezioni" id="collezioni">
-        <h2>Le Nostre Collezioni</h2>
-        <div class="collezione-items">
-            <div class="item">
-                <img src="collezione1.jpg" alt="Collezione 1">
-                <h3>Collezione A</h3>
-                <p>Borse eleganti e pratiche per ogni occasione.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Chi Siamo</h2>
+        <p>Griselle è un brand che celebra l'eleganza e la funzionalità per la donna moderna. Ogni prodotto è pensato per offrire lusso, qualità e praticità, con una forte attenzione alla sostenibilità e all'artigianalità.</p>
+        <div class="about-details">
+            <div class="mission">
+                <h3>La Nostra Missione</h3>
+                <p>Vogliamo offrire prodotti che combinano bellezza e praticità, con materiali sostenibili, pensati per la donna che apprezza la qualità senza compromessi.</p>
             </div>
-            <div class="item">
-                <img src="collezione2.jpg" alt="Collezione 2">
-                <h3>Collezione B</h3>
-                <p>Gioielli esclusivi per un look raffinato.</p>
-            </div>
-            <div class="item">
-                <img src="collezione3.jpg" alt="Collezione 3">
-                <h3>Collezione C</h3>
-                <p>Tacchi eleganti che combinano stile e comfort.</p>
+            <div class="values">
+                <h3>I Nostri Valori</h3>
+                <p>Artigianato, sostenibilità, eleganza e innovazione sono al centro di ogni nostra creazione. Crediamo in un mondo in cui il lusso può essere accessibile e responsabile.</p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>Chi Siamo</h2>
-        <p>Griselle è un marchio di moda dedicato alla donna moderna, che cerca di combinare l'eleganza senza tempo con la funzionalità. Ogni pezzo della nostra collezione è progettato per essere versatile, chic e pratico, pensato per la donna che vuole sentirsi speciale ogni giorno.</p>
+    <!-- Collezioni Section -->
+    <section id="collezioni" class="collezioni">
+        <h2>Le nostre Collezioni</h2>
+        <div class="collezione-items">
+            <div class="item">
+                <img src="product1.jpg" alt="Borsa Danse">
+                <h3>Borsa Danse</h3>
+                <p>Elegante e versatile, perfetta per ogni occasione.</p>
+                <a href="#">Scopri di più</a>
+            </div>
+            <div class="item">
+                <img src="product2.jpg" alt="Gioielli Grace">
+                <h3>Gioielli Grace</h3>
+                <p>Sofisticati e delicati, per aggiungere lusso a ogni look.</p>
+                <a href="#">Scopri di più</a>
+            </div>
+            <div class="item">
+                <img src="product3.jpg" alt="Scarpe Pirouette">
+                <h3>Scarpe Pirouette</h3>
+                <p>Unione perfetta di eleganza e comfort per ogni passo.</p>
+                <a href="#">Scopri di più</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonianze</h2>
+        <div class="testimonial-items">
+            <div class="testimonial">
+                <p>"Le borse Griselle sono un sogno! Eleganti e pratiche, le adoro!"</p>
+                <h3>- Laura, Milano</h3>
+            </div>
+            <div class="testimonial">
+                <p>"Ho acquistato un paio di scarpe Pirouette e sono incredibilmente comode. Adoro l'estetica e il comfort!"</p>
+                <h3>- Sara, Roma</h3>
+            </div>
+            <div class="testimonial">
+                <p>"I gioielli Grace hanno aggiunto un tocco di classe al mio outfit, senza essere troppo vistosi. Perfetti!"</p>
+                <h3>- Elena, Torino</h3>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
         <h2>Contattaci</h2>
-        <form action="#" method="POST">
+        <form>
             <label for="name">Nome</label>
             <input type="text" id="name" name="name" required>
-
+            
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
-
+            
             <label for="message">Messaggio</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Invia Messaggio</button>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Invia</button>
         </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Griselle. Tutti i diritti riservati.</p>
+        <p>&copy; 2025 Griselle. Tutti i diritti riservati. | <a href="#">Privacy</a> | <a href="#">Termini e Condizioni</a></p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
