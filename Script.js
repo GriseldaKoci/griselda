@@ -30,4 +30,3 @@ document.querySelector('.contact form').addEventListener('submit', function(e) {
         alert("Per favore, compila tutti i campi!");
     }
 });
-
