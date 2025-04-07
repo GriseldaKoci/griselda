@@ -16,7 +16,7 @@ body {
 .brand-image {
     width: 100%;
     height: auto;
-    max-height: 500px; /* Puoi cambiare questo valore in base alle tue preferenze */
+    max-height: 1000 px; /* Puoi cambiare questo valore in base alle tue preferenze */
     object-fit: cover;
 }
 
