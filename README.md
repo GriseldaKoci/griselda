@@ -2,7 +2,7 @@
 Sito web che presenta il mio personal brand e la mia collezione di borse.
 
 ## Dati necessari
--  ACME Novara: Anno Accademico 2024/2025
+ACME Novara: Anno Accademico 2024/2025
 
 •⁠  ⁠corso :Web design
 
