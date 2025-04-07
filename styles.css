@@ -12,6 +12,14 @@ body {
     color: #333;
 }
 
+/* Image of the Brand Presentation */
+.brand-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Puoi cambiare questo valore in base alle tue preferenze */
+    object-fit: cover;
+}
+
 /* Header */
 header {
     background-color: #e8d6d2; /* Rosa antico */
@@ -45,12 +53,20 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('hero-image.jpg'); /* Sostituisci con l'immagine di sfondo */
     background-size: cover;
     background-position: center;
     padding: 100px 40px;
     text-align: center;
     color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Modifica a seconda della necessità */
+    object-fit: cover;
+    margin-bottom: 30px;
 }
 
 .hero h2 {
