@@ -45,7 +45,7 @@ header nav ul li a {
 
 /* Hero Section (Benvenuto) */
 .hero {
-    background-image: url('benvenuto.jpg');
+    background-image: url('https://i.pinimg.com/736x/6f/c3/39/6fc33958311ac579dd74ff84b7664a51.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 40px;
