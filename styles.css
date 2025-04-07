@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Body and Background */
+/* Body */
 body {
     background-color: #f9f9f9;
     color: #333;
@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background-color: #e8d6d2; /* Rosa antico */
+    background-color: #e8d6d2;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -43,39 +43,22 @@ header nav ul li a {
     font-weight: bold;
 }
 
-/* Hero Section */
+/* Hero Section (Benvenuto) */
 .hero {
-    background-image: url('hero-image.jpg'); /* Immagine di sfondo */
+    background-image: url('benvenuto.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 40px;
     text-align: center;
     color: white;
-    position: relative;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Overlay semi-trasparente */
-    z-index: 1;
-}
-
-.hero .hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero h2 {
+.hero .welcome-text h2 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.hero p {
+.hero .welcome-text p {
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
@@ -102,23 +85,16 @@ header nav ul li a {
     margin-bottom: 40px;
 }
 
-.about-details {
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-}
-
-.about-details .mission,
-.about-details .values {
-    width: 45%;
-    text-align: left;
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 /* Collezioni Section */
 .collezioni {
     padding: 60px 40px;
     text-align: center;
-    background-color: #fff;
+    background-color: #f0f0f0;
 }
 
 .collezioni h2 {
@@ -139,10 +115,8 @@ header nav ul li a {
 
 .collezione-items img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .collezione-items h3 {
@@ -152,37 +126,6 @@ header nav ul li a {
 
 .collezione-items p {
     font-size: 1rem;
-}
-
-/* Testimonials Section */
-.testimonials {
-    padding: 60px 40px;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-.testimonial-items {
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-}
-
-.testimonial {
-    width: 30%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-.testimonial h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
 }
 
 /* Contact Section */
@@ -209,8 +152,7 @@ header nav ul li a {
     font-size: 1.2rem;
 }
 
-.contact input,
-.contact textarea {
+.contact input, .contact textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -233,4 +175,9 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 1rem;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
 }
