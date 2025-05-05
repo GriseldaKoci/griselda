@@ -18,7 +18,7 @@ header {
     top: 0;
     z-index: 1000;
     background-color: #e8d6d2;
-    padding: 20px 50px; /* Aggiunto più padding per desktop */
+    padding: 10px 20px;  /* Ridotto per mobile */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@ header {
 
 header .logo h1 {
     font-family: 'Georgia', serif;
-    font-size: 2.5rem; /* Grande per desktop */
+    font-size: 1.8rem;  /* Ridotto per mobile */
     color: #333;
 }
 
@@ -37,13 +37,17 @@ header nav ul {
     list-style: none;
     display: flex;
     margin: 0;
-    gap: 30px;
+    gap: 15px;  /* Spazio ridotto per mobile */
+}
+
+header nav ul li {
+    margin: 0;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1rem;  /* Ridotto per mobile */
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -216,24 +220,28 @@ footer a {
 @media (max-width: 768px) {
     /* Header su mobile */
     header {
-        padding: 20px 30px;
+        padding: 10px 20px;
         flex-direction: column;
         align-items: center;
     }
 
     header .logo h1 {
-        font-size: 2rem; /* Ridotto per mobile */
+        font-size: 1.5rem;  /* Logo più piccolo per mobile */
     }
 
     header nav ul {
         display: flex;
         justify-content: center;
-        gap: 25px; /* Spazio tra i link */
+        gap: 20px; /* Ridotto per dispositivi mobili */
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem; /* Font più piccolo per mobile */
     }
 
     /* Hero Section */
     .hero {
-        padding: 90px 20px;
+        padding: 100px 20px;
     }
 
     .hero .welcome-text h2 {
@@ -275,16 +283,24 @@ footer a {
 @media (max-width: 480px) {
     /* Header su mobile */
     header {
-        padding: 15px 20px;
+        padding: 10px 15px;
+    }
+
+    header .logo h1 {
+        font-size: 1.3rem;  /* Logo più piccolo per schermi molto piccoli */
     }
 
     header nav ul {
-        gap: 15px; /* Ridotto per schermi molto piccoli */
+        gap: 10px; /* Ulteriore riduzione dello spazio tra i link */
+    }
+
+    header nav ul li a {
+        font-size: 0.8rem; /* Ridotto per dispositivi molto piccoli */
     }
 
     /* Hero Section */
     .hero {
-        padding: 60px 15px;
+        padding: 80px 15px;
     }
 
     .hero .welcome-text h2 {
@@ -292,17 +308,17 @@ footer a {
     }
 
     .hero .welcome-text p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero .cta-button {
-        padding: 10px 25px;
+        padding: 10px 20px;
         font-size: 1rem;
     }
 
     /* Collezione Section */
     .collezione-items .item {
-        width: 100%;
+        width: 100%; /* Adattato a tutta la larghezza su dispositivi molto piccoli */
     }
 
     footer {
