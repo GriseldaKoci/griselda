@@ -23,6 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* leggero effetto ombra */
+    width: 100%;
 }
 
 header .logo h1 {
@@ -34,6 +35,7 @@ header .logo h1 {
 header nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 header nav ul li {
@@ -215,18 +217,14 @@ footer a {
 /* Responsive Styles */
 @media (max-width: 768px) {
     header {
-        flex-direction: row; /* Rimanere in una sola riga */
-        align-items: center;
-        justify-content: space-between;
         padding: 15px 20px;
+        justify-content: space-between;
     }
 
     header nav ul {
-        display: flex; /* Disporre i link in una riga */
-        flex-direction: row; /* In orizzontale */
-        align-items: center;
-        gap: 20px; /* Spaziatura tra i link */
-        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        gap: 25px; /* Distanza tra i link */
     }
 
     header nav ul li {
