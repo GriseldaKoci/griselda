@@ -18,11 +18,11 @@ header {
     top: 0;
     z-index: 1000;
     background-color: #e8d6d2;
-    padding: 20px 40px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* leggero effetto ombra */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* effetto ombra */
     width: 100%;
 }
 
@@ -36,10 +36,7 @@ header nav ul {
     list-style: none;
     display: flex;
     margin: 0;
-}
-
-header nav ul li {
-    margin-left: 30px;
+    gap: 20px; /* Distanziare i link */
 }
 
 header nav ul li a {
@@ -60,7 +57,7 @@ header nav ul li a:hover {
     background-image: url('https://i.pinimg.com/736x/50/6d/1c/506d1cf77d6d33ebf15e6b689fe38aa4.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 40px;
+    padding: 80px 20px; /* Ridotto il padding per adattarlo al telefono */
     text-align: center;
     color: white;
     overflow: hidden;
@@ -84,59 +81,59 @@ header nav ul li a:hover {
 }
 
 .hero .welcome-text h2 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Ridotto il font per schermi più piccoli */
     margin-bottom: 20px;
 }
 
 .hero .welcome-text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Ridotto il font */
     margin-bottom: 30px;
 }
 
 .hero .cta-button {
     background-color: #d8a7a0;
-    padding: 10px 30px;
+    padding: 10px 25px;
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     border-radius: 5px;
 }
 
 /* About Section */
 .about {
-    padding: 60px 40px;
+    padding: 40px 15px; /* Ridotto il padding per schermi piccoli */
     text-align: center;
     background-color: #fff;
 }
 
 .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .about p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 /* Collezioni Section */
 .collezioni {
-    padding: 60px 40px;
+    padding: 40px 15px;
     text-align: center;
     background-color: #f0f0f0;
 }
 
 .collezioni h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .collezione-items {
     display: flex;
-    justify-content: space-around;
-    gap: 30px;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 15px; /* Distanza tra gli articoli */
 }
 
 .collezione-items .item {
@@ -151,7 +148,7 @@ header nav ul li a:hover {
 }
 
 .collezione-items h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 10px 0;
 }
 
@@ -161,18 +158,18 @@ header nav ul li a:hover {
 
 /* Contact Section */
 .contact {
-    padding: 60px 40px;
+    padding: 40px 15px;
     text-align: center;
     background-color: #fff;
 }
 
 .contact h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 30px;
 }
 
 .contact form {
-    width: 50%;
+    width: 90%; /* Form prende la larghezza quasi intera su mobile */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -180,7 +177,7 @@ header nav ul li a:hover {
 }
 
 .contact label {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contact input,
@@ -195,7 +192,7 @@ header nav ul li a:hover {
     padding: 10px;
     background-color: #d8a7a0;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -217,36 +214,31 @@ footer a {
 /* Responsive Styles */
 @media (max-width: 768px) {
     header {
-        padding: 15px 20px;
-        justify-content: space-between;
+        flex-direction: row; /* Rimanere orizzontale */
+        padding: 10px 20px;
     }
 
     header nav ul {
         display: flex;
         justify-content: center;
-        gap: 25px; /* Distanza tra i link */
-    }
-
-    header nav ul li {
-        margin-left: 0;
+        gap: 20px; /* Distanza tra i link */
     }
 
     .hero {
-        padding: 60px 20px;
-        margin-top: 80px;
+        padding: 70px 20px;
     }
 
     .hero .welcome-text h2 {
-        font-size: 2rem;
+        font-size: 2.2rem; /* Adattato per schermi piccoli */
     }
 
     .hero .welcome-text p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero .cta-button {
-        padding: 10px 20px;
-        font-size: 1rem;
+        padding: 10px 25px;
+        font-size: 1.1rem;
     }
 
     .about,
@@ -261,7 +253,7 @@ footer a {
     }
 
     .collezione-items .item {
-        width: 90%;
+        width: 90%; /* Ampiezza di ogni elemento */
     }
 
     .contact form {
@@ -271,12 +263,20 @@ footer a {
 
 /* Responsive for very small devices (e.g., phones under 480px) */
 @media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
     header nav ul {
-        gap: 15px; /* Ridurre la distanza tra i link per dispositivi più piccoli */
+        gap: 15px; /* Distanza tra i link */
+    }
+
+    .hero {
+        padding: 60px 15px;
     }
 
     .hero .welcome-text h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem; /* Adattato per schermi molto piccoli */
     }
 
     .hero .welcome-text p {
@@ -284,14 +284,14 @@ footer a {
     }
 
     .hero .cta-button {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 8px 16px;
     }
 
     .about h2,
     .collezioni h2,
     .contact h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .collezione-items .item {
