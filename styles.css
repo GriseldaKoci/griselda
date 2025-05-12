@@ -355,3 +355,9 @@ footer a {
     height: 80%;
     border: 0;
     filter: grayscale(20%) brightness(95%);
+
+ .mappa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
