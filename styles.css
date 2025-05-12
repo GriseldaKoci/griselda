@@ -339,6 +339,12 @@ footer a {
     }
 }
 
+.mappa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
 .map-container {
     width: 100%;
     height: 400px;
@@ -356,8 +362,4 @@ footer a {
     border: 0;
     filter: grayscale(20%) brightness(95%);
 
- .mappa {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} 
+ 
