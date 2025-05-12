@@ -59,7 +59,7 @@ header nav ul li a:hover {
 /* Hero Section (Benvenuto) */
 .hero {
     position: relative;
-    background-image: url('https://i.pinimg.com/736x/50/6d/1c/506d1cf77d6d33ebf15e6b689fe38aa4.jpg');
+    background-image: url('copertina.jpg');
     background-size: cover;
     background-position: center;
     padding: 120px 50px; /* Grande padding per desktop */
